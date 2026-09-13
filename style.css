@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #111827;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+nav h2 {
+    font-size: 26px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* Home */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #2563eb
+    );
+
+    color: white;
+
+    padding: 30px;
+}
+
+.home h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.home h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+
+    background-color: white;
+    color: #2563eb;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #dbeafe;
+}
+
+
+/* Sections */
+
+section {
+    padding: 80px 8%;
+
+    text-align: center;
+}
+
+section h2 {
+    font-size: 35px;
+
+    margin-bottom: 30px;
+
+    color: #111827;
+}
+
+section > p {
+    max-width: 800px;
+
+    margin: 10px auto;
+
+    line-height: 1.7;
+}
+
+
+/* Cards */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #2563eb;
+
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+
+/* Contact */
+
+#contact {
+    background-color: #e0ecff;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+
+    .home h2 {
+        font-size: 23px;
+    }
+
+}
